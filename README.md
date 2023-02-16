@@ -1,3 +1,6 @@
+This is going to be an app for backyard chicken owners. Enter some details of the cost associated with owning the chickens and how productive they are to find out how much each egg cost to produce.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
