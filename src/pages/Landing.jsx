@@ -1,8 +1,14 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 function Landing() {
   return (
-    <div class="grid h-screen place-items-center">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      class="grid h-screen place-items-center"
+    >
       <div class="relative">
         <a href="/inputs">
           <img
@@ -15,7 +21,7 @@ function Landing() {
           </div>
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
