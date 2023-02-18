@@ -2,6 +2,8 @@ This is going to be an app for backyard chicken owners. Enter some details of th
 
 React and Tailwind
 
+Framer Motion for page transitions.
+
 
 # Getting Started with Create React App
 
