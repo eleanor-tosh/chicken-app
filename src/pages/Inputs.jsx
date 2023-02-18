@@ -1,7 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 function Inputs() {
+  const navigate = useNavigate()
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    navigate('/Result')
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -14,14 +22,14 @@ function Inputs() {
           Fill in this form to calculate your backyard hens cost per egg.
         </h1>
 
-        <form className="bg-gray-50 shadow-xl w-3/4 mx-auto">
+        <form className="bg-gray-50 shadow-xl w-3/4 mx-auto p-10 mb-20">
           <div>
             <div>
               <div className="text-center col-span-full mb-4">
                 <h2 className="text-xl font-bold underline mb-4">
                   About the Hens
                 </h2>
-                <p>Give an approximation for the nuumber of eggs.</p>
+                <p>Give an approximation for the number of eggs.</p>
               </div>
               {/* First Other*/}
               <div className="grid gap-6 mb-6 md:grid-cols-2">
@@ -409,30 +417,6 @@ function Inputs() {
               </div>
             </div>
 
-            <div className="grid gap-6 mb-6 md:grid-cols-2">
-              <div>
-                <label className="block mb-1 text-sm font-medium text-gray-900">
-                  Cost of Coop ($)
-                </label>
-                <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
-                  type="number"
-                  placeholder="1200"
-                />
-              </div>
-
-              <div>
-                <label className="block mb-1 text-sm font-medium text-gray-900">
-                  Time in Use (years)
-                </label>
-                <input
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
-                  type="number"
-                  placeholder="5"
-                />
-              </div>
-            </div>
-
             <div>
               <div className="text-center col-span-full mb-4">
                 <h2 className="text-xl font-bold underline mb-4">
@@ -510,7 +494,22 @@ function Inputs() {
                 </div>
               </div>
             </div>
+            <p className="mb-5">
+              Note: This form does not cover all costs of raising backyard
+              chickens. It does not take into account the initial set-up costs
+              (costs to purchase the hens, buy a coop, set-up the coop, purchase
+              feed and water conatiner, fencing etc) and also does not take into
+              account time/effort involved in looking after hens such as
+              cleaning, feeding, refilling water.
+            </p>
           </div>
+          <button
+            type="submit"
+            onClick={handleSubmit}
+            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+          >
+            Calculate
+          </button>
         </form>
       </div>
     </motion.div>

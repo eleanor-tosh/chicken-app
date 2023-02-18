@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Landing() {
   return (
@@ -10,7 +11,7 @@ function Landing() {
       className="grid h-screen place-items-center"
     >
       <div className="relative">
-        <a href="/inputs">
+        <Link to={`/inputs`}>
           <img
             className="max-w-screen-xl hover:opacity-70"
             alt="eggs"
@@ -19,7 +20,7 @@ function Landing() {
           <div className="absolute text-2xl text-gray-300 bottom-20 left-1/2 -translate-x-1/2">
             <p>Click to enter</p>
           </div>
-        </a>
+        </Link>
       </div>
     </motion.div>
   )
