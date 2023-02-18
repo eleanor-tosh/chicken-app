@@ -22,7 +22,7 @@ function Inputs() {
           Fill in this form to calculate your backyard hens cost per egg.
         </h1>
 
-        <form className="bg-gray-50 shadow-xl w-3/4 mx-auto p-10 mb-20">
+        <form className="bg-gray-50 shadow-xl w-3/4 mx-auto p-10 mb-20 rounded-lg">
           <div>
             <div>
               <div className="text-center col-span-full mb-4">
@@ -506,7 +506,7 @@ function Inputs() {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="text-white bg-slate-700 hover:bg-slate-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             Calculate
           </button>
