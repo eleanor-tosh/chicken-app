@@ -2,7 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-function Result() {
+function Result(props) {
+  console.log(props.inputData)
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}

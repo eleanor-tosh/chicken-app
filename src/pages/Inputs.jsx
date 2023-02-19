@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { filterProps, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
 function Inputs(props) {
@@ -39,7 +39,7 @@ function Inputs(props) {
 
   function handleSubmit(event) {
     event.preventDefault()
-    filterProps.changeInput(inputData)
+    props.changeInput(inputData)
     navigate('/Result')
   }
   console.log({ inputData })
