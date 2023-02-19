@@ -10,25 +10,25 @@ function Inputs(props) {
     food1freq: '',
     food1size: '',
     food1cost: '',
-    food2: '',
+    food2freq: '',
     food2size: '',
     food2cost: '',
-    food3: '',
+    food3freq: '',
     food3size: '',
     food3cost: '',
-    food4: '',
+    food4freq: '',
     food4size: '',
     food4cost: '',
-    food5: '',
+    food5freq: '',
     food5size: '',
     food5cost: '',
-    bed1: '',
+    bed1freq: '',
     bed1size: '',
     bed1cost: '',
-    bed2: '',
+    bed2freq: '',
     bed2size: '',
     bed2cost: '',
-    bed3: '',
+    bed3freq: '',
     bed3size: '',
     bed3cost: '',
     other1: '',
@@ -180,6 +180,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  name="food2freq"
+                  value={inputData.food2freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -190,6 +193,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="20"
+                  name="food2size"
+                  value={inputData.food2size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -200,6 +206,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="45.99"
+                  name="food2cost"
+                  value={inputData.food2cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -223,6 +232,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  name="food3freq"
+                  value={inputData.food3freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -233,6 +245,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="20"
+                  name="food3size"
+                  value={inputData.food3size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -243,6 +258,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="45.99"
+                  name="food3cost"
+                  value={inputData.food3cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -266,6 +284,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  name="food4freq"
+                  value={inputData.food4freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -276,6 +297,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="20"
+                  name="food4size"
+                  value={inputData.food4size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -286,6 +310,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="45.99"
+                  name="food4cost"
+                  value={inputData.food4cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -309,6 +336,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  name="food5freq"
+                  value={inputData.food5freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -319,6 +349,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="20"
+                  name="food5size"
+                  value={inputData.food5size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -329,6 +362,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="45.99"
+                  name="food5cost"
+                  value={inputData.food5cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -361,6 +397,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="120"
+                  name="bed1freq"
+                  value={inputData.bed1freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -371,6 +410,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="19"
+                  name="bed1size"
+                  value={inputData.bed1size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -381,6 +423,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="26.95"
+                  name="bed1cost"
+                  value={inputData.bed1cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -404,6 +449,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="120"
+                  name="bed2freq"
+                  value={inputData.bed2freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -414,6 +462,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="19"
+                  name="bed2size"
+                  value={inputData.bed2size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -424,6 +475,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="26.95"
+                  name="bed2cost"
+                  value={inputData.bed2cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -447,6 +501,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="120"
+                  name="bed3freq"
+                  value={inputData.bed3freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -457,6 +514,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="19"
+                  name="bed3size"
+                  value={inputData.bed3size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -467,6 +527,9 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="26.95"
+                  name="bed3cost"
+                  value={inputData.bed3cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
@@ -501,6 +564,9 @@ function Inputs(props) {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="365"
+                    name="other1freq"
+                    value={inputData.other1freq}
+                    onChange={onChangeHandler}
                   />
                 </div>
                 <div>
@@ -511,6 +577,9 @@ function Inputs(props) {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="60"
+                    name="other1cost"
+                    value={inputData.other1cost}
+                    onChange={onChangeHandler}
                   />
                 </div>
               </div>
@@ -534,6 +603,9 @@ function Inputs(props) {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="365"
+                    name="other2freq"
+                    value={inputData.other2freq}
+                    onChange={onChangeHandler}
                   />
                 </div>
                 <div>
@@ -544,6 +616,9 @@ function Inputs(props) {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="60"
+                    name="other2cost"
+                    value={inputData.other2cost}
+                    onChange={onChangeHandler}
                   />
                 </div>
               </div>
