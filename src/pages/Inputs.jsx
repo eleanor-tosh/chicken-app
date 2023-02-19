@@ -1,13 +1,52 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState } from 'react'
+import { filterProps, motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
-function Inputs() {
+function Inputs(props) {
   const navigate = useNavigate()
+  const [inputData, setInputData] = useState({
+    hens: '',
+    eggs: '',
+    food1freq: '',
+    food1size: '',
+    food1cost: '',
+    food2: '',
+    food2size: '',
+    food2cost: '',
+    food3: '',
+    food3size: '',
+    food3cost: '',
+    food4: '',
+    food4size: '',
+    food4cost: '',
+    food5: '',
+    food5size: '',
+    food5cost: '',
+    bed1: '',
+    bed1size: '',
+    bed1cost: '',
+    bed2: '',
+    bed2size: '',
+    bed2cost: '',
+    bed3: '',
+    bed3size: '',
+    bed3cost: '',
+    other1: '',
+    other1cost: '',
+    other2: '',
+    other2cost: '',
+  })
 
   function handleSubmit(event) {
     event.preventDefault()
+    filterProps.changeInput(inputData)
     navigate('/Result')
+  }
+  console.log({ inputData })
+
+  const onChangeHandler = (event) => {
+    const { name, value } = event.target
+    setInputData({ ...inputData, [name]: value })
   }
 
   return (
@@ -41,6 +80,9 @@ function Inputs() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="8"
+                    name="hens"
+                    value={inputData.hens}
+                    onChange={onChangeHandler}
                   />
                 </div>
                 <div>
@@ -51,6 +93,9 @@ function Inputs() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
                     placeholder="2"
+                    name="eggs"
+                    value={inputData.eggs}
+                    onChange={onChangeHandler}
                   />
                 </div>
               </div>
@@ -83,6 +128,9 @@ function Inputs() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  name="food1freq"
+                  value={inputData.food1freq}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -93,6 +141,9 @@ function Inputs() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="20"
+                  name="food1size"
+                  value={inputData.food1size}
+                  onChange={onChangeHandler}
                 />
               </div>
               <div>
@@ -103,6 +154,9 @@ function Inputs() {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="45.99"
+                  name="food1cost"
+                  value={inputData.food1cost}
+                  onChange={onChangeHandler}
                 />
               </div>
             </div>
