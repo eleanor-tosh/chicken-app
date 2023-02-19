@@ -8,9 +8,11 @@ function Result(props) {
   let fday = 0
   let bday = 0
   let oday = 0
+  let tday = 0
   let fchick = 0
   let bchick = 0
   let ochick = 0
+  let tchick = 0
 
   // food calculations
   let f1day = props.inputData.food1freq / props.inputData.food1cost
@@ -66,6 +68,14 @@ function Result(props) {
   bchick = bday / props.inputData.hens
   ochick = oday / props.inputData.hens
 
+  // totals
+  tday = fday + bday + oday
+  tchick = fchick + bchick + ochick
+
+  // eggs
+  egg = (fday + bday + oday) / props.inputData.eggs
+  dozen = egg * 12
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
@@ -79,7 +89,8 @@ function Result(props) {
 
       <div className="bg-gray-50 shadow-xl w-1/2 mx-auto p-10 mb-20 rounded-full mt-20 opacity-80">
         <h2 className="text-4xl font-bold text-center leading-relaxed p-4">
-          It costs approx. ${egg} to produce each egg or ${dozen} for a dozen.
+          It costs approx. ${egg.toFixed(2)} to produce each egg or $
+          {dozen.toFixed(2)} for a dozen.
         </h2>
       </div>
 
@@ -89,10 +100,11 @@ function Result(props) {
         </h1>
         <div>
           <h2 className="text-xl font-bold underline mb-4">Total Per Day</h2>
-          <div className="grid gap-6 mb-6 md:grid-cols-3">
+          <div className="grid gap-6 mb-6 md:grid-cols-4">
             <div>Food = ${fday.toFixed(2)} per day.</div>
             <div>Bedding = ${bday.toFixed(2)} per day.</div>
             <div>Other = ${oday.toFixed(2)} per day.</div>
+            <div>Total = ${tday.toFixed(2)} per day.</div>
           </div>
         </div>
         <div>
@@ -100,10 +112,11 @@ function Result(props) {
           <p className="text-l italic mb-4">
             For ({props.inputData.hens} hens)
           </p>
-          <div className="grid gap-6 mb-6 md:grid-cols-3">
+          <div className="grid gap-6 mb-6 md:grid-cols-4">
             <div>Food = ${fchick.toFixed(2)} per chicken.</div>
             <div>Bedding = ${bchick.toFixed(2)} per chicken.</div>
             <div>Other = ${ochick.toFixed(2)} per chicken.</div>
+            <div>Total = ${tchick.toFixed(2)} per chicken.</div>
           </div>
         </div>
         <h1 className="text-2xl font-bold text-right text-slate-700">
