@@ -42,7 +42,6 @@ function Inputs(props) {
     props.changeInput(inputData)
     navigate('/Result')
   }
-  console.log({ inputData })
 
   const onChangeHandler = (event) => {
     const { name, value } = event.target
@@ -79,6 +78,7 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    required
                     placeholder="8"
                     name="hens"
                     value={inputData.hens}
@@ -92,6 +92,7 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    required
                     placeholder="2"
                     name="eggs"
                     value={inputData.eggs}

@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
 function Result(props) {
-  console.log(props.inputData)
   let egg = 0
   let dozen = 0
   let fday = 0
@@ -12,6 +11,60 @@ function Result(props) {
   let fchick = 0
   let bchick = 0
   let ochick = 0
+
+  // food calculations
+  let f1day = props.inputData.food1freq / props.inputData.food1cost
+  let f2day = props.inputData.food2freq / props.inputData.food2cost
+  let f3day = props.inputData.food3freq / props.inputData.food3cost
+  let f4day = props.inputData.food4freq / props.inputData.food4cost
+  let f5day = props.inputData.food5freq / props.inputData.food5cost
+
+  if (f1day > 0) {
+    fday = fday + f1day
+  }
+  if (f2day > 0) {
+    fday = fday + f2day
+  }
+  if (f3day > 0) {
+    fday = fday + f3day
+  }
+  if (f4day > 0) {
+    fday = fday + f4day
+  }
+  if (f5day > 0) {
+    fday = fday + f5day
+  }
+
+  // bed calculation
+  let b1day = props.inputData.bed1freq / props.inputData.bed1cost
+  let b2day = props.inputData.bed2freq / props.inputData.bed2cost
+  let b3day = props.inputData.bed3freq / props.inputData.bed3cost
+
+  if (b1day > 0) {
+    bday = bday + b1day
+  }
+  if (b2day > 0) {
+    bday = bday + b2day
+  }
+  if (f3day > 0) {
+    bday = bday + b3day
+  }
+
+  // other calculation
+  let o1day = props.inputData.other1freq / props.inputData.other1cost
+  let o2day = props.inputData.other2freq / props.inputData.other2cost
+
+  if (o1day > 0) {
+    oday = oday + o1day
+  }
+  if (o2day > 0) {
+    oday = oday + o2day
+  }
+
+  // per chicken
+  fchick = fday / props.inputData.hens
+  bchick = bday / props.inputData.hens
+  ochick = oday / props.inputData.hens
 
   return (
     <motion.div
@@ -37,19 +90,20 @@ function Result(props) {
         <div>
           <h2 className="text-xl font-bold underline mb-4">Total Per Day</h2>
           <div className="grid gap-6 mb-6 md:grid-cols-3">
-            <div>Food = ${fday} per day.</div>
-            <div>Bedding = ${bday} per day.</div>
-            <div>Other = ${oday} per day.</div>
+            <div>Food = ${fday.toFixed(2)} per day.</div>
+            <div>Bedding = ${bday.toFixed(2)} per day.</div>
+            <div>Other = ${oday.toFixed(2)} per day.</div>
           </div>
         </div>
         <div>
-          <h2 className="text-xl font-bold underline mb-4">
-            Per Chicken Per Day
-          </h2>
+          <h2 className="text-xl font-bold underline">Per Chicken Per Day</h2>
+          <p className="text-l italic mb-4">
+            For ({props.inputData.hens} hens)
+          </p>
           <div className="grid gap-6 mb-6 md:grid-cols-3">
-            <div>Food = ${fchick} per chicken.</div>
-            <div>Bedding = ${bchick} per chicken.</div>
-            <div>Other = ${ochick} per chicken.</div>
+            <div>Food = ${fchick.toFixed(2)} per chicken.</div>
+            <div>Bedding = ${bchick.toFixed(2)} per chicken.</div>
+            <div>Other = ${ochick.toFixed(2)} per chicken.</div>
           </div>
         </div>
         <h1 className="text-2xl font-bold text-right text-slate-700">
