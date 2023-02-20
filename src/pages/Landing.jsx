@@ -14,7 +14,7 @@ function Landing() {
         <Link to={`/inputs`}>
           <img
             className="max-w-screen-xl hover:opacity-70"
-            alt="eggs"
+            alt="click the eggs"
             src="/images/eggs.jpg"
           />
           <div className="absolute text-2xl text-gray-300 bottom-20 left-1/2 -translate-x-1/2">
