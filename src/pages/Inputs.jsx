@@ -78,6 +78,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     required
                     placeholder="8"
                     name="hens"
@@ -92,6 +94,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     required
                     placeholder="2"
                     name="eggs"
@@ -129,6 +133,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="60"
                   name="food1freq"
                   value={inputData.food1freq}
@@ -142,6 +148,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="20"
                   name="food1size"
                   value={inputData.food1size}
@@ -155,6 +163,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="45.99"
                   name="food1cost"
                   value={inputData.food1cost}
@@ -183,6 +193,8 @@ function Inputs(props) {
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
                   placeholder="60"
+                  min="0"
+                  max="50000"
                   name="food2freq"
                   value={inputData.food2freq}
                   onChange={onChangeHandler}
@@ -195,6 +207,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="20"
                   name="food2size"
                   value={inputData.food2size}
@@ -208,6 +222,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="45.99"
                   name="food2cost"
                   value={inputData.food2cost}
@@ -235,6 +251,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="60"
                   name="food3freq"
                   value={inputData.food3freq}
@@ -248,6 +266,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="20"
                   name="food3size"
                   value={inputData.food3size}
@@ -261,6 +281,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="45.99"
                   name="food3cost"
                   value={inputData.food3cost}
@@ -288,6 +310,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="60"
                   name="food4freq"
                   value={inputData.food4freq}
@@ -301,6 +325,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="20"
                   name="food4size"
                   value={inputData.food4size}
@@ -314,6 +340,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="45.99"
                   name="food4cost"
                   value={inputData.food4cost}
@@ -341,6 +369,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="60"
                   name="food5freq"
                   value={inputData.food5freq}
@@ -354,6 +384,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="20"
                   name="food5size"
                   value={inputData.food5size}
@@ -367,6 +399,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="45.99"
                   name="food5cost"
                   value={inputData.food5cost}
@@ -403,6 +437,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="120"
                   name="bed1freq"
                   value={inputData.bed1freq}
@@ -416,6 +452,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="19"
                   name="bed1size"
                   value={inputData.bed1size}
@@ -429,6 +467,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="26.95"
                   name="bed1cost"
                   value={inputData.bed1cost}
@@ -456,6 +496,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="120"
                   name="bed2freq"
                   value={inputData.bed2freq}
@@ -469,6 +511,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="19"
                   name="bed2size"
                   value={inputData.bed2size}
@@ -482,6 +526,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="26.95"
                   name="bed2cost"
                   value={inputData.bed2cost}
@@ -509,6 +555,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="120"
                   name="bed3freq"
                   value={inputData.bed3freq}
@@ -522,6 +570,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="19"
                   name="bed3size"
                   value={inputData.bed3size}
@@ -535,6 +585,8 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="number"
+                  min="0"
+                  max="50000"
                   placeholder="26.95"
                   name="bed3cost"
                   value={inputData.bed3cost}
@@ -573,6 +625,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     placeholder="365"
                     name="other1freq"
                     value={inputData.other1freq}
@@ -586,6 +640,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     placeholder="60"
                     name="other1cost"
                     value={inputData.other1cost}
@@ -613,6 +669,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     placeholder="365"
                     name="other2freq"
                     value={inputData.other2freq}
@@ -626,6 +684,8 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
+                    min="0"
+                    max="50000"
                     placeholder="60"
                     name="other2cost"
                     value={inputData.other2cost}
