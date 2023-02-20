@@ -118,6 +118,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Topflite Scratch & Lay"
                 />
               </div>
@@ -170,6 +171,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Topflite Scratch & Lay"
                 />
               </div>
@@ -222,6 +224,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Topflite Scratch & Lay"
                 />
               </div>
@@ -274,6 +277,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Topflite Scratch & Lay"
                 />
               </div>
@@ -326,6 +330,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Topflite Scratch & Lay"
                 />
               </div>
@@ -387,6 +392,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Wood Shavings"
                 />
               </div>
@@ -439,6 +445,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Wood Shavings"
                 />
               </div>
@@ -491,6 +498,7 @@ function Inputs(props) {
                 <input
                   className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                   type="string"
+                  maxLength={30}
                   placeholder="Wood Shavings"
                 />
               </div>
@@ -554,6 +562,7 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="string"
+                    maxLength={30}
                     placeholder="Special Suppliment"
                   />
                 </div>
@@ -593,6 +602,7 @@ function Inputs(props) {
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="string"
+                    maxLength={30}
                     placeholder="Special Suppliment"
                   />
                 </div>
