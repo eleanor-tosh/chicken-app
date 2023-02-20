@@ -21,19 +21,19 @@ function Result(props) {
   let f4day = props.inputData.food4freq / props.inputData.food4cost
   let f5day = props.inputData.food5freq / props.inputData.food5cost
 
-  if (f1day > 0) {
+  if (f1day > -1) {
     fday = fday + f1day
   }
-  if (f2day > 0) {
+  if (f2day > -1) {
     fday = fday + f2day
   }
-  if (f3day > 0) {
+  if (f3day > -1) {
     fday = fday + f3day
   }
-  if (f4day > 0) {
+  if (f4day > -1) {
     fday = fday + f4day
   }
-  if (f5day > 0) {
+  if (f5day > -1) {
     fday = fday + f5day
   }
 
@@ -42,13 +42,13 @@ function Result(props) {
   let b2day = props.inputData.bed2freq / props.inputData.bed2cost
   let b3day = props.inputData.bed3freq / props.inputData.bed3cost
 
-  if (b1day > 0) {
+  if (b1day > -1) {
     bday = bday + b1day
   }
-  if (b2day > 0) {
+  if (b2day > -1) {
     bday = bday + b2day
   }
-  if (f3day > 0) {
+  if (f3day > -1) {
     bday = bday + b3day
   }
 
@@ -56,10 +56,10 @@ function Result(props) {
   let o1day = props.inputData.other1freq / props.inputData.other1cost
   let o2day = props.inputData.other2freq / props.inputData.other2cost
 
-  if (o1day > 0) {
+  if (o1day > -1) {
     oday = oday + o1day
   }
-  if (o2day > 0) {
+  if (o2day > -1) {
     oday = oday + o2day
   }
 
