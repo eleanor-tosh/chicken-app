@@ -54,8 +54,7 @@ function Inputs(props) {
       newErrors.hens = 'Number of hens is required!'
     }
     if (inputData.eggs === '') {
-      newErrors.eggs =
-        'Number of eggs per day is required (this can be approximate)!'
+      newErrors.eggs = 'Approx. number of eggs per day is required!'
     }
     setErrors(newErrors)
 
