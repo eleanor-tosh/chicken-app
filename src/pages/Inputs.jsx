@@ -37,16 +37,36 @@ function Inputs(props) {
     other2cost: '',
   })
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    props.changeInput(inputData)
-    navigate('/Result')
-  }
+  const [errors, setErrors] = useState({})
 
-  const onChangeHandler = (event) => {
+  function onChangeHandler(event) {
     const { name, value } = event.target
     setInputData({ ...inputData, [name]: value })
   }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+
+    // hens and eggs must be filled
+    const newErrors = {}
+
+    if (inputData.hens === '') {
+      newErrors.hens = 'Number of hens is required!'
+    }
+    if (inputData.eggs === '') {
+      newErrors.eggs =
+        'Number of eggs per day is required (this can be approximate)!'
+    }
+    setErrors(newErrors)
+
+    if (Object.keys(newErrors).length === 0) {
+      props.changeInput(inputData)
+      navigate('/Result')
+    }
+  }
+
+  // const regex =
+  //   /^([0-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9]|[1-5][0-9][0-9][0-9][0-9])$/
 
   return (
     <motion.div
@@ -75,6 +95,7 @@ function Inputs(props) {
                   <label className="block mb-1 text-sm font-medium text-gray-900">
                     Number of Hens
                   </label>
+
                   <input
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 block w-full"
                     type="number"
@@ -86,6 +107,7 @@ function Inputs(props) {
                     value={inputData.hens}
                     onChange={onChangeHandler}
                   />
+                  <p className="text-red-500 font-bold">{errors.hens}</p>
                 </div>
                 <div>
                   <label className="block mb-1 text-sm font-medium text-gray-900">
@@ -102,6 +124,7 @@ function Inputs(props) {
                     value={inputData.eggs}
                     onChange={onChangeHandler}
                   />
+                  <p className="text-red-500 font-bold">{errors.eggs}</p>
                 </div>
               </div>
             </div>
@@ -409,7 +432,6 @@ function Inputs(props) {
               </div>
             </div>
           </div>
-
           <div>
             <div className="text-center col-span-full mb-4">
               <h2 className="text-xl font-bold underline mb-4">
@@ -709,7 +731,9 @@ function Inputs(props) {
             className="text-white bg-slate-700 hover:bg-slate-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
           >
             Calculate
-          </button>
+          </button>{' '}
+          <p className="text-red-500">{errors.hens}</p>
+          <p className="text-red-500">{errors.eggs}</p>
         </form>
       </div>
     </motion.div>
