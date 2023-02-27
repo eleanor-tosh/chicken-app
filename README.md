@@ -1,4 +1,4 @@
-See it live at https://tranquil-sea-15988.herokuapp.com/
+See it live at https://chicken-app.herokuapp.com/
 
 A simple app to help backyard chicken keepers to calculate how much it cost to produce each egg.
 
