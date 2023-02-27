@@ -1,3 +1,5 @@
+See it live at https://tranquil-sea-15988.herokuapp.com/
+
 A simple app to help backyard chicken keepers to calculate how much it cost to produce each egg.
 
 The user enters some details about what they feed their chickens and what they use for bedding along with a few other inputs. The result is a summary of the average cost to produce each egg, keep each hen and a breakdown by cost to feed and house the little dinosaurs.
