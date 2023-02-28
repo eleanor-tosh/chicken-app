@@ -8,6 +8,8 @@ React and Tailwind
 
 Framer Motion for page transitions.
 
+TODO: refactor using arrays and array methods (probably map)) to make the code shorter and calculations neater
+
 
 # Getting Started with Create React App
 
