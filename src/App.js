@@ -2,6 +2,7 @@ import './App.css'
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 import Landing from './pages/Landing.jsx'
 import Inputs from './pages/Inputs.jsx'
 import Result from './pages/Result.jsx'
@@ -56,6 +57,9 @@ function App() {
           <Route path="/result" element={<Result inputData={inputResult} />} />
         </Routes>
       </Router>
+      <div>
+        <Footer />
+      </div>
     </div>
   )
 }
