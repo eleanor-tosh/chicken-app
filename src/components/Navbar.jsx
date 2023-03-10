@@ -75,6 +75,11 @@ function Navbar() {
                   Recipes
                 </a>
               </li>
+              <li>
+                <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-2 rounded-full">
+                  Sign-in
+                </button>
+              </li>
             </ul>
           </div>
         </div>
