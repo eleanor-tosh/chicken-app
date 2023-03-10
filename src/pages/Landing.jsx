@@ -1,28 +1,23 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 
 function Landing() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      className="grid h-screen place-items-center"
-    >
-      <div className="relative">
-        <Link to={`/inputs`}>
-          <img
-            className="max-w-screen-xl hover:opacity-70"
-            alt="click the eggs"
-            src="/images/eggs.jpg"
-          />
-          <div className="absolute text-2xl text-gray-300 bottom-20 left-1/2 -translate-x-1/2">
-            <p>Click to enter</p>
-          </div>
-        </Link>
+    <div class="container grid grid-cols-2 mx-auto">
+      <div class="p-20">
+        <h1 class="text-5xl pb-10 leading-relaxed font-semibold text-orange-700">
+          Welcome to Scrambled, your backyard chicken website.
+        </h1>
+        <p class="text-lg">
+          Here you can calculate the cost of each egg that your hens produce,
+          find out how much it might cost to set-up a backyard coop, record
+          on-going expenses, track your hens, get some handy chicken raising
+          tips and find some eggcellent recipes.
+        </p>
       </div>
-    </motion.div>
+      <div>
+        <img src="/images/eggs.jpg" alt="Eggs" />
+      </div>
+    </div>
   )
 }
 

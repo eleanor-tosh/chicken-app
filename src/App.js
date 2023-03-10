@@ -1,6 +1,7 @@
 import './App.css'
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar.jsx'
 import Landing from './pages/Landing.jsx'
 import Inputs from './pages/Inputs.jsx'
 import Result from './pages/Result.jsx'
@@ -45,6 +46,9 @@ function App() {
 
   return (
     <div>
+      <div>
+        <Navbar />
+      </div>
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
