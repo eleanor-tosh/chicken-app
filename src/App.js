@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import Landing from './pages/Landing.jsx'
 import Inputs from './pages/Inputs.jsx'
 import Result from './pages/Result.jsx'
+import Prices from './pages/Prices.jsx'
 
 function App() {
   const [inputResult, setInputData] = useState({
@@ -55,6 +56,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/inputs" element={<Inputs changeInput={handleData} />} />
           <Route path="/result" element={<Result inputData={inputResult} />} />
+          <Route path="/prices" element={<Prices />} />
         </Routes>
       </Router>
       <div>
