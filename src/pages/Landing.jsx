@@ -1,6 +1,9 @@
 import React from 'react'
+import puns from '.././Data/puns.js'
 
 function Landing() {
+  let randomPun = puns[Math.floor(Math.random() * puns.length)]
+
   return (
     <div class="container grid grid-cols-2 mx-auto">
       <div class="p-20">
@@ -13,6 +16,8 @@ function Landing() {
           on-going expenses, track your hens, get some handy chicken raising
           tips and find some eggcellent recipes.
         </p>
+        <br></br>
+        <p class="text-xl italic text-orange-700">{randomPun}</p>
       </div>
       <div>
         <img src="/images/eggs.jpg" alt="Eggs" />
