@@ -56,7 +56,7 @@ function YourHens() {
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             <ul>
               <li>Age: 2 Years</li>
-              <li>Breed: BSpeckled Sussex</li>
+              <li>Breed: Speckled Sussex</li>
               <li>Colour: Brown and White</li>
               <li>
                 Identifying Feature: Has the most white of the speckled sussex
