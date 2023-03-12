@@ -82,6 +82,17 @@ function AddHen() {
                   name="notes"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></textarea>
+                <label for="image">New Image:</label>
+                <input
+                  type="file"
+                  id="image"
+                  name="image"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1"
+                ></input>
+                <div></div>
+                <p class="mb-5 text-sm text-gray-500">
+                  SVG, PNG, JPG or GIF (MAX. 800x400px).
+                </p>
               </div>
 
               <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
