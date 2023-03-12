@@ -11,7 +11,7 @@ function YourHens() {
               Name: Henny
             </h5>{' '}
             <a href="/edithens">
-              <i class="fa fa-edit ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
+              <i class="fa-regular fa-pen-to-square ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
             </a>
           </div>
 
@@ -119,6 +119,20 @@ function YourHens() {
           <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
             Edit
           </button>
+        </div>
+      </div>
+
+      <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
+        <img
+          class="rounded-t-lg p-10"
+          src="./images/chickeniconpic.jpg"
+          alt=""
+        />
+        <div class="p-5 text-center">
+          <h5 class="my-10 text-2xl font-bold tracking-tight text-orange-700">
+            Add a Hen
+          </h5>
+          <i class="fa-solid fa-plus text-8xl text-orange-400"></i>
         </div>
       </div>
     </div>

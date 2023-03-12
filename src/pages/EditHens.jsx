@@ -21,7 +21,7 @@ function EditHens() {
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
               ></input>
               <div class="grid grid-cols-2">
-                <label for="dob">DOB:</label>{' '}
+                <label for="dob">Date of Birth:</label>{' '}
                 <input
                   type="string"
                   id="dob"
@@ -57,17 +57,27 @@ function EditHens() {
                 >
                   <option>Consistently</option>
                   <option>Infrequent</option>
+                  <option>Unsure</option>
                   <option>Point-of-Lay</option>
                   <option>Too Young</option>
                   <option>Retired</option>
                 </select>
+                <label for="life">Life Status:</label>{' '}
+                <select
+                  id="life"
+                  name="life"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
+                >
+                  <option>Alive</option>
+                  <option>Rehomed</option>
+                  <option>RIP</option>
+                </select>
                 <label for="notes">Notes:</label>{' '}
-                <input
-                  type="textbox"
+                <textarea
                   id="notes"
                   name="notes"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
-                ></input>
+                ></textarea>
               </div>
 
               <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
