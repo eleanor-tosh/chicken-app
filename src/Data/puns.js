@@ -1,4 +1,4 @@
-export default [
+let puns = [
   'What did the doctor tell the chicken with high cholesterol? “Lay off the eggs for a while."',
   'What did the egg do when it saw the frying pan? It scrambled.',
   'Why do you have to watch what you say around egg whites? They can’t take a yolk.',
@@ -27,3 +27,4 @@ export default [
   'These eggs are out of this world. Eggstraterrestial.',
   'Why was the chicken up all night? Restless Egg Syndrome.',
 ]
+export default puns

@@ -123,7 +123,7 @@ function YourHens() {
       </div>
 
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
-        <a href="">
+        <a href="/">
           <img
             class="rounded-t-lg p-10"
             src="./images/chickeniconpic.jpg"

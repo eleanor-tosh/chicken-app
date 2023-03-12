@@ -1,4 +1,4 @@
-export default [
+let recipe = [
   {
     title: 'Hard Boiled Egg',
     comment:
@@ -35,3 +35,4 @@ export default [
     image: './images/pavlova.jpg',
   },
 ]
+export default recipe
