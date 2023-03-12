@@ -1,10 +1,14 @@
 import React from 'react'
 
-function EditHens() {
+function AddHen() {
   return (
     <div class="container mx-auto px-20">
       <div class="max-w-2xl mb-10 bg-white border border-gray-200 rounded-lg shadow m-auto">
-        <img class="rounded-t-lg" src="./images/barred-rock1.jpg" alt="" />
+        <img
+          class="rounded-t-lg p-10"
+          src="./images/chickeniconpic.jpg"
+          alt=""
+        />
         <div class="p-5">
           <form>
             <div class="flex flex-col text-left col-span-full mb-4">
@@ -81,7 +85,7 @@ function EditHens() {
               </div>
 
               <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
-                Save
+                Add Chicken to Flock
               </button>
             </div>
           </form>
@@ -91,4 +95,4 @@ function EditHens() {
   )
 }
 
-export default EditHens
+export default AddHen

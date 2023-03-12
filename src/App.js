@@ -11,6 +11,7 @@ import YourHens from './pages/YourHens.jsx'
 import Recipes from './pages/Recipes.jsx'
 import Record from './pages/Record.jsx'
 import EditHens from './pages/EditHens.jsx'
+import AddHen from './pages/AddHen.jsx'
 
 function App() {
   const [inputResult, setInputData] = useState({
@@ -65,6 +66,7 @@ function App() {
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/record" element={<Record />} />
           <Route path="/edithens" element={<EditHens />} />
+          <Route path="/addhen" element={<AddHen />} />
         </Routes>
       </Router>
       <div>

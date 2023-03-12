@@ -31,9 +31,14 @@ function YourHens() {
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
         <img class="rounded-t-lg" src="./images/barred-rock2.jpg" alt="" />
         <div class="p-5">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700">
-            Name: Summer
-          </h5>
+          <div class="flex">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700 justify-start">
+              Name: Summer
+            </h5>{' '}
+            <a href="/edithens">
+              <i class="fa-regular fa-pen-to-square ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
+            </a>
+          </div>
           <p class="mb-3 font-normal text-gray-700">
             <ul>
               <li>Age: 2 Years</li>
@@ -44,19 +49,20 @@ function YourHens() {
               <li>Notes: Really likes strawberries</li>
             </ul>
           </p>
-
-          <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
-            Edit
-          </button>
         </div>
       </div>
 
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
         <img class="rounded-t-lg" src="./images/speckled-sussex1.jpg" alt="" />
         <div class="p-5">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700">
-            Name: Eagle
-          </h5>
+          <div class="flex">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700 justify-start">
+              Name: Eagle
+            </h5>{' '}
+            <a href="/edithens">
+              <i class="fa-regular fa-pen-to-square ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
+            </a>
+          </div>
           <p class="mb-3 font-normal text-gray-700">
             <ul>
               <li>Age: 2 Years</li>
@@ -70,18 +76,20 @@ function YourHens() {
               <li>Notes: The most friendly</li>
             </ul>
           </p>
-          <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
-            Edit
-          </button>
         </div>
       </div>
 
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
         <img class="rounded-t-lg" src="./images/speckled-sussex2.jpg" alt="" />
         <div class="p-5">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700">
-            Name: Brown
-          </h5>
+          <div class="flex">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700 justify-start">
+              Name: Brown
+            </h5>{' '}
+            <a href="/edithens">
+              <i class="fa-regular fa-pen-to-square ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
+            </a>
+          </div>
           <p class="mb-3 font-normal text-gray-700">
             <ul>
               <li>Age: 2 Years</li>
@@ -92,18 +100,20 @@ function YourHens() {
               <li>Notes: Does dumb stuff</li>
             </ul>
           </p>
-          <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
-            Edit
-          </button>
         </div>
       </div>
 
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
         <img class="rounded-t-lg" src="./images/speckled-sussex3.jpg" alt="" />
         <div class="p-5">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700">
-            Name: Speck
-          </h5>
+          <div class="flex">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-orange-700 justify-start">
+              Name: Speckle
+            </h5>{' '}
+            <a href="/edithens">
+              <i class="fa-regular fa-pen-to-square ml-3 hover:bg-orange-200 rounded text-orange-400"></i>
+            </a>
+          </div>
           <p class="mb-3 font-normal text-gray-700">
             <ul>
               <li>Age: 2 Years</li>
@@ -116,14 +126,11 @@ function YourHens() {
               </li>
             </ul>
           </p>
-          <button class="bg-orange-400 hover:bg-orange-700 text-white font-bold py-1 px-4 rounded-full">
-            Edit
-          </button>
         </div>
       </div>
 
       <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
-        <a href="/">
+        <a href="/addhen">
           <img
             class="rounded-t-lg p-10"
             src="./images/chickeniconpic.jpg"
