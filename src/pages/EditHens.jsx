@@ -18,6 +18,7 @@ function EditHens() {
                 type="string"
                 id="name"
                 name="name"
+                value="Abby"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
               ></input>
               <div class="grid grid-cols-2">
@@ -26,6 +27,7 @@ function EditHens() {
                   type="date"
                   id="dob"
                   name="dob"
+                  value="23/02/2021"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></input>
                 <label for="breed">Breed:</label>{' '}
@@ -33,6 +35,7 @@ function EditHens() {
                   type="string"
                   id="breed"
                   name="breed"
+                  value="Barred Rock"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></input>
                 <label for="color">Colour:</label>{' '}
@@ -40,6 +43,7 @@ function EditHens() {
                   type="string"
                   id="colour"
                   name="colour"
+                  value="Black and White"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></input>
                 <label for="feature">Identifying Feature:</label>{' '}
@@ -47,12 +51,14 @@ function EditHens() {
                   type="string"
                   id="feature"
                   name="feature"
+                  value="Bent toe on left foot"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></input>
                 <label for="laying">Laying Status:</label>{' '}
                 <select
                   id="laying"
                   name="laying"
+                  value="Consistently"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 >
                   <option>Consistently</option>
@@ -60,15 +66,17 @@ function EditHens() {
                   <option>Unsure</option>
                   <option>Point-of-Lay</option>
                   <option>Too Young</option>
-                  <option>Retired</option>
+                  <option>Not laying</option>
                 </select>
                 <label for="life">Life Status:</label>{' '}
                 <select
                   id="life"
                   name="life"
+                  value="Active"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 >
                   <option>Active</option>
+                  <option>Retired</option>
                   <option>Rehomed</option>
                   <option>RIP</option>
                 </select>
@@ -76,6 +84,7 @@ function EditHens() {
                 <textarea
                   id="notes"
                   name="notes"
+                  value="Likes to hide in the far corner of the run"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 ></textarea>
                 <label for="image">New Image:</label>

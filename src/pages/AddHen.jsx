@@ -64,7 +64,7 @@ function AddHen() {
                   <option>Unsure</option>
                   <option>Point-of-Lay</option>
                   <option>Too Young</option>
-                  <option>Retired</option>
+                  <option>Not laying</option>
                 </select>
                 <label for="life">Life Status:</label>{' '}
                 <select
@@ -73,6 +73,7 @@ function AddHen() {
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-1 mb-5"
                 >
                   <option>Active</option>
+                  <option>Retired</option>
                   <option>Rehomed</option>
                   <option>RIP</option>
                 </select>
