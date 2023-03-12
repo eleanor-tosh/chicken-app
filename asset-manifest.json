@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/chicken-app/static/css/main.69355606.css",
+    "main.js": "/chicken-app/static/js/main.3586740e.js",
+    "static/js/787.30b0f3c4.chunk.js": "/chicken-app/static/js/787.30b0f3c4.chunk.js",
+    "static/media/lotofeggs.jpg": "/chicken-app/static/media/lotofeggs.2332c49d290e23a88258.jpg",
+    "index.html": "/chicken-app/index.html",
+    "main.69355606.css.map": "/chicken-app/static/css/main.69355606.css.map",
+    "main.3586740e.js.map": "/chicken-app/static/js/main.3586740e.js.map",
+    "787.30b0f3c4.chunk.js.map": "/chicken-app/static/js/787.30b0f3c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69355606.css",
+    "static/js/main.3586740e.js"
+  ]
+}
