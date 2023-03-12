@@ -183,7 +183,7 @@ function YourHens() {
           </div>
         </div>
 
-        <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto">
+        <div class="max-w-sm mb-10 bg-white border border-gray-200 rounded-lg shadow mx-auto hover:border-orange-400 hover:border-4">
           <a href="/addhen">
             <img
               class="rounded-t-lg p-10"
