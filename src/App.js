@@ -9,6 +9,7 @@ import Result from './pages/Result.jsx'
 import Prices from './pages/Prices.jsx'
 import YourHens from './pages/YourHens.jsx'
 import Recipes from './pages/Recipes.jsx'
+import Record from './pages/Record.jsx'
 
 function App() {
   const [inputResult, setInputData] = useState({
@@ -61,6 +62,7 @@ function App() {
           <Route path="/prices" element={<Prices />} />
           <Route path="/hens" element={<YourHens />} />
           <Route path="/recipes" element={<Recipes />} />
+          <Route path="/record" element={<Record />} />
         </Routes>
       </Router>
       <div>
