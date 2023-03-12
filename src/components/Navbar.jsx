@@ -21,7 +21,7 @@ function Navbar() {
               <li>
                 <a
                   href="/"
-                  class="block py-2 pl-3 pr-4 text-white bg-green-700 rounded md:bg-transparent md:text-green-700 md:p-0 "
+                  class="block py-2 pl-3 pr-4 text-white bg-orange-400 rounded md:bg-transparent md:text-orange-400 md:p-0 "
                   aria-current="page"
                 >
                   Home
@@ -30,7 +30,7 @@ function Navbar() {
               <li>
                 <a
                   href="/inputs"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0"
                 >
                   Calculator
                 </a>
@@ -39,7 +39,7 @@ function Navbar() {
               <li>
                 <a
                   href="/record"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0"
                 >
                   Record
                 </a>
@@ -47,7 +47,7 @@ function Navbar() {
               <li>
                 <a
                   href="/hens"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0"
                 >
                   My Hens
                 </a>
@@ -56,7 +56,7 @@ function Navbar() {
               <li>
                 <a
                   href="/recipes"
-                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-green-700 md:p-0"
+                  class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-400 md:p-0"
                 >
                   Recipes
                 </a>
