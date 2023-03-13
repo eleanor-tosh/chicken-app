@@ -14,7 +14,7 @@ function Recipes() {
               <a
                 href={recipe.link}
                 target="_blank"
-                class="flex flex-col mb-10 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100"
+                class="flex flex-col mb-10 items-center bg-white border border-gray-200 rounded-lg shadow h-full md:flex-row md:max-w-xl hover:bg-gray-100"
                 rel="noreferrer"
               >
                 <img

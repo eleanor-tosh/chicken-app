@@ -36,7 +36,8 @@ let recipe = [
   },
   {
     title: 'Eggs Benedict',
-    comment: 'Make them at home rather than going to a cafe',
+    comment:
+      'Make them at home rather than going to a cafe. They will be better with your fresh eggs.',
     link: 'https://www.bbcgoodfood.com/recipes/gordons-eggs-benedict',
     image: './images/eggsben.jpg',
   },
@@ -52,7 +53,7 @@ let recipe = [
     comment:
       'Treat the family to this baked egg custard for a comforting dessert.',
     link: 'https://www.bbcgoodfood.com/recipes/egg-custard',
-    image: './images/eggsben.jpg',
+    image: './images/custard.jpg',
   },
   {
     title: 'Easter Egg Cheesecake',
