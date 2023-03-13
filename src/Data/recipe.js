@@ -34,5 +34,32 @@ let recipe = [
     link: 'https://www.chelsea.co.nz/browse-recipes/pavlova/',
     image: './images/pavlova.jpg',
   },
+  {
+    title: 'Eggs Benedict',
+    comment: 'Make them at home rather than going to a cafe',
+    link: 'https://www.bbcgoodfood.com/recipes/gordons-eggs-benedict',
+    image: './images/eggsben.jpg',
+  },
+  {
+    title: 'Poached Eggs',
+    comment:
+      'A poached egg is an egg that has been cooked, outside the shell, by poaching, as opposed to simmering or boiling',
+    link: 'https://www.bbcgoodfood.com/recipes/poached-eggs',
+    image: './images/poached.jpg',
+  },
+  {
+    title: 'Egg Custard',
+    comment:
+      'Treat the family to this baked egg custard for a comforting dessert.',
+    link: 'https://www.bbcgoodfood.com/recipes/egg-custard',
+    image: './images/eggsben.jpg',
+  },
+  {
+    title: 'Easter Egg Cheesecake',
+    comment:
+      'Well, it does use eggs. Got leftover Easter eggs to use up? Try incorporating them into an easy no-bake vanilla cheesecake. ',
+    link: 'https://www.bbcgoodfood.com/recipes/easter-egg-cheesecake',
+    image: './images/easter.jpg',
+  },
 ]
 export default recipe
