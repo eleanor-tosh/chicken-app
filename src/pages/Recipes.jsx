@@ -10,7 +10,7 @@ function Recipes() {
       <div class="container grid grid-cols-2 mx-auto mb-20">
         {recipes?.map((recipe) => {
           return (
-            <div class="mx-auto">
+            <div class="mx-auto mb-10 w-11/12">
               <a
                 href={recipe.link}
                 target="_blank"
